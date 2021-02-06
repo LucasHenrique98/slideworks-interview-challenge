@@ -1,0 +1,202 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  color: #30c2e9;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+
+.mainDiv {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.formDiv {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.leftDiv {
+  display: flex;
+  flex-direction: column;
+
+  color: #30c2e9;
+  font-size: 20px;
+
+  margin-right: 40px;
+}
+
+.rigthDiv {
+  display: flex;
+  flex-direction: column;
+
+  color: #30c2e9;
+}
+
+.optionsDiv {
+  display: flex;
+  flex-direction: row;
+
+  font-size: 18px;
+
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 30px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.dropdown {
+  height: 50px;
+  width: 400px;
+
+  border: 2px solid #86def5;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #30c2e9;
+
+  background-color: #daf0f7;
+}
+
+.inputs {
+  width: 690px;
+  height: 50px;
+
+  border-radius: 10px;
+  border: 2px solid #86def5;
+  background-color: #daf0f7;
+
+  color: #30c2e9;
+  font-size: 18px;
+
+  outline: none;
+  padding-left: 15px;
+}
+
+.tagInputField {
+  width: 200px;
+  height: 30px;
+
+  border: 2px solid #86def5;
+
+  color: #30c2e9;
+}
+
+.cardTag {
+  width: 100px;
+  height: 30px;
+
+  border: 1px solid #86def5;
+  border-radius: 10px;
+
+  background-color: #30c2e9;
+  color: white;
+
+  margin-right: 15px;
+}
+
+.submitButton {
+  width: 200px;
+  height: 100px;
+
+  margin-top: 415px;
+
+  position: fixed;
+
+  background-color: #30c2e9;
+
+  color: white;
+  font-size: 20px;
+
+  border: none;
+}
+
+.textArea {
+  width: 700px;
+  height: 300px;
+
+  color: #30c2e9;
+  font-size: 18px;
+
+  border: 3px solid #86def5;
+  border-radius: 5px;
+
+  outline: none;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.optionsStyle {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+textarea:focus,
+input:focus,
+input::placeholder,
+select:focus {
+  color: #30c2e9;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+@media (max-width: 1000px) {
+  .formDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .textArea {
+    height: 70px;
+  }
+  .submitButton {
+    position: relative;
+
+    bottom: 400px;
+  }
+}
+
+@media (max-width: 750px) {
+  .inputs {
+    width: 500px;
+  }
+  .textArea {
+    width: 520px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inputs {
+    width: 400px;
+  }
+  .textArea {
+    width: 420px;
+  }
+}
