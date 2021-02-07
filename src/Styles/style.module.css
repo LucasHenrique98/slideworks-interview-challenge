@@ -43,7 +43,6 @@
 
 .optionsDiv {
   display: flex;
-  flex-direction: row;
 
   font-size: 18px;
 
@@ -198,5 +197,24 @@ select:focus {
   }
   .textArea {
     width: 420px;
+  }
+}
+
+@media (max-width: 420px) {
+  .header {
+    font-size: 20px;
+  }
+  .dropdown {
+    width: 300px;
+  }
+  .mainDiv {
+    margin-top: 50px;
+  }
+
+  .inputs {
+    width: 280px;
+  }
+  .textArea {
+    width: 290px;
   }
 }

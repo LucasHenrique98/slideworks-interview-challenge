@@ -87,6 +87,7 @@ function App() {
       reset(data);
       alert('Formulário enviado com sucesso');
     } catch (error) {
+      alert('Erro ao enviar formulário');
       console.log(error);
     }
   }
