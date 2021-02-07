@@ -93,8 +93,15 @@ function App() {
   }
 
   function addTag(event) {
-    if (event.key === '+' && event.target.value !== '') {
-      setTags([event.target.value.toUpperCase().replace('+', ''), ...tags]);
+    if (
+      event.key === '+' &&
+      event.target.value !== '' &&
+      event.target.value !== '+'
+    ) {
+      setTags([
+        event.target.value.toUpperCase().replace('+', '').replace(' ', ''),
+        ...tags,
+      ]);
       event.target.value = '';
     } else {
       event.preventDefault();
@@ -220,7 +227,7 @@ function App() {
               <strong>Tags</strong>
 
               <div style={{ marginTop: '20px' }}>
-                <div style={{ marginBottom: '20px' }}>
+                <div className={css.tagsField}>
                   {tags.map((tag, index) => {
                     return (
                       <span className={css.cardTag} key={index}>

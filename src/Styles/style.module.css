@@ -99,6 +99,13 @@
   color: #30c2e9;
 }
 
+.tagsField {
+  margin-bottom: 20px;
+
+  width: 400px;
+  overflow: hidden;
+}
+
 .cardTag {
   width: 100px;
   height: 30px;
@@ -110,6 +117,8 @@
   color: white;
 
   margin-right: 15px;
+
+  word-wrap: break-word;
 }
 
 .submitButton {
